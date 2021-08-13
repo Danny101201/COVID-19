@@ -95,7 +95,7 @@
             .then(data=>{
                 let total = parseFloat(data.cases)
                 let pass = parseFloat(data.deaths)
-                let rate = ((pass/total)).toFixed(5) * 100 + '%'
+                let rate = ((pass/total)).toFixed(4) * 100 + '%'
                 document.getElementById('country').innerHTML = data.country
                 document.getElementById('today').innerHTML = data.todayCases.toLocaleString()
                 document.getElementById('cases').innerHTML = data.cases.toLocaleString()
